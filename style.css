@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.openChatBtn {
+    display: inline-block;     /* ensures it behaves like a normal button */
+    padding: 20px 40px !important; /* force a bigger clickable area */
+    font-size: 24px !important;    /* makes text larger */
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #007bff;  /* optional, makes it visible */
+    color: white;
+    border: none;
+}
+
