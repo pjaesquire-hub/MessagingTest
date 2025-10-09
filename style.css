@@ -4,6 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #272f33;
 }
 
 .openChatBtn {
@@ -12,8 +13,8 @@ body {
     font-size: 24px !important;    /* makes text larger */
     border-radius: 12px;
     cursor: pointer;
-    background-color: #007bff;  /* optional, makes it visible */
-    color: white;
+    background-color: #000000;  /* optional, makes it visible */
+    color: rgb(255, 238, 0);
     border: none;
 }
 
