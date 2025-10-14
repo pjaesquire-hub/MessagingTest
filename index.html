@@ -8,8 +8,43 @@
 </head>
 <body>
     
-<button class="openChatBtn" id="openChatBtn">Message Us</button>
+    <div class="container">
+        <h1>Message Us</h1>
+        <form id="messageForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
 
-    <script src="script.js"></script>
+            <label for="product">What do you need help with?</label><br>
+            <select id="product" name="product" required>
+                <option value="">-- Select your product --</option>
+                <option value="Mobile">Mobile</option>
+
+            </select>
+<br>
+            <label for="issue">Please describe your issue:</label><br>
+            <textarea id="issue" name="issue" rows="5" placeholder="Type your message here..." required></textarea><br>
+
+            <button type="button" id="openChatBtn">Message Us</button>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+<script>
+window.sprChatSettings = window.sprChatSettings || {}
+window.sprChatSettings = {
+    "appId":"68908c590ab05c03d043ecbd_app_55100654","skin":"MODERN","scope":"CONVERSATION"
+};
+
+!function(){var a,r,n,o,i,s=window,e=s.sprChat;e&&e.loaded||(a=document,(r=function(){r.q.push(arguments)}).q=[],
+s.sprChat=r,s.sprChat.loaded=!0,n=0,o="spr-live-chat-widget",i=function(){var e=a.getElementById(o),e=(e&&e.parentNode.removeChild(e),a.createElement("script")),
+t=(e.type="text/javascript",e.async=!0,e.src="https://prod5-live-chat.sprinklr.com/api/livechat/handshake/widget/"+s.sprChatSettings.appId,e.id=o,
+e.onerror=function(e){var t,a;++n<=3?setTimeout(i,250):(s.sprChat.loaded=!1,t="WIDGET_LOAD_FAILED",a=e,
+r.q.map(function(e){if("subscribeToUpdate"===e[0]&&e[1]&&"loadCompleted"===e[1].topic)return e[1].subscriber}).map(function(e){e&&e({response:{error:!0,errorPayload:{type:t,message:a}}})}))},
+a.getElementsByTagName("script")[0]);t.parentNode.insertBefore(e,t)},"loading"!==a.readyState?i():a.addEventListener("DOMContentLoaded",i))}();
+</script>
+
+
+
 </body>
 </html>
+
