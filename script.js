@@ -16,6 +16,5 @@ const button = document.getElementById("openChatBtn");
                "_c_66599c9e65546f03da49e758": ['EE App - CheckLatestEeMobileBill']
             }
         });
-    });
-
+   });
 
