@@ -44,3 +44,6 @@ const button = document.getElementById("openChatBtn");
         
         });
             
+
+
+, "scope": "Conversation", "landingScreen": "LAST_CONVERSATION"
